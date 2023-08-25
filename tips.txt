@@ -1,1 +1,3 @@
 //her ligger tipsene
+ng g m moduleName
+choose module at component creation : ng g c auth/components/changePassword --module=auth
