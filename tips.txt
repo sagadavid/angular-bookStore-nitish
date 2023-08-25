@@ -1,3 +1,3 @@
 //her ligger tipsene
 ng g m moduleName
-choose module at component creation : ng g c auth/components/changePassword --module=auth
+choose module reference at component creation against multiple alternative modules : ng g c auth/components/changePassword --module=auth
