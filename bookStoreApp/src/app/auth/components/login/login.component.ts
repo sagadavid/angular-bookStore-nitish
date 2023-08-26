@@ -23,6 +23,9 @@ export class LoginComponent implements OnInit {
   }
 
   goToBookDetails(bookId: number, authorId: number) {
-    this.router.navigate(['/public/book-details/', bookId, 'author', authorId]);
+    this.router.navigate(
+      ['/public/book-details/', bookId, 'author', authorId],
+      { queryParams: { authorName: 'davids' } }
+    );
   }
 }
