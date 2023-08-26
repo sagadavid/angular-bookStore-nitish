@@ -18,6 +18,8 @@ export class BookDetailsComponent implements OnInit {
     //lets see what value parameters are obtained by activatedroute
     this.route.params.subscribe((param) => {
       console.log(param);
+      this.authorId = param['authorId'];
+      this.bookId = param['bookId'];
     });
   }
 }
