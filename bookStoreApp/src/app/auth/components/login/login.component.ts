@@ -21,4 +21,8 @@ export class LoginComponent implements OnInit {
   goToSignUp() {
     this.router.navigate(['/auth/signup']);
   }
+
+  goToBookDetails() {
+    this.router.navigate(['/public/book-details/', 100, 'author', 200]);
+  }
 }
