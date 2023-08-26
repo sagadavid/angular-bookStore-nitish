@@ -13,7 +13,7 @@ const routes: Routes = [
     children: [
       { path: 'all-books', component: AllBooksComponent },
       {
-        path: 'book-details/:id',
+        path: 'book-details/:id/author/:authorId',
         component: BookDetailsComponent,
       },
       { path: 'home', component: HomeComponent },
