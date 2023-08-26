@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/auth/signup']);
   }
 
-  goToBookDetails() {
-    this.router.navigate(['/public/book-details/', 100, 'author', 200]);
+  goToBookDetails(bookId: number, authorId: number) {
+    this.router.navigate(['/public/book-details/', bookId, 'author', authorId]);
   }
 }
