@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,12 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 export class LoginComponent implements OnInit {
   public loginName: string = '';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.route.queryParams.subscribe((queryParam) => {
       console.log(queryParam);
       this.loginName = queryParam['name'];
     });
+  }
+
+  goToSignUp() {
+    this.router.navigate(['/auth/signup']);
   }
 }
