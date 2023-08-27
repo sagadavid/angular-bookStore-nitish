@@ -7,18 +7,12 @@ import { HomeComponent } from './components/home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: 'all-books', component: AllBooksComponent },
   {
-    path: 'public',
-    component: PublicComponent,
-    children: [
-      { path: 'all-books', component: AllBooksComponent },
-      {
-        path: 'book-details/:bookId/author/:authorId',
-        component: BookDetailsComponent,
-      },
-      { path: 'home', component: HomeComponent },
-    ],
+    path: 'book-details/:bookId/author/:authorId',
+    component: BookDetailsComponent,
   },
+  { path: 'home', component: HomeComponent },
 ];
 
 @NgModule({
