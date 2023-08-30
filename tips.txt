@@ -10,4 +10,4 @@ component under already created module: ng g c user/components/add-book
 
 ng add @angular/material 
 
-ng g @angular/material:navigation header
+create component by material: ng generate @angular/material:address-form <component-name>
