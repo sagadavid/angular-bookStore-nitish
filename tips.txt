@@ -9,3 +9,5 @@ create a module with routing : ng g m user --routing --module=app
 component under already created module: ng g c user/components/add-book
 
 ng add @angular/material 
+
+ng g @angular/material:navigation header
