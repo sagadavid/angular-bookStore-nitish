@@ -20,13 +20,16 @@ import { TabloComponent } from './tablo/tablo.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { DrapdropComponent } from './drapdrop/drapdrop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AddressComponent,
-    TabloComponent
+    TabloComponent,
+    DrapdropComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { MatSortModule } from '@angular/material/sort';
     ReactiveFormsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
